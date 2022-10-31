@@ -37,6 +37,9 @@ namespace Ejercicios
                 case 8:
                     ejercicio8();
                     break;
+                default:
+                    Console.WriteLine("Ingrese un número entero del 1 al 8.");
+                    break;
             }
         }
         private void ejercicio1()
