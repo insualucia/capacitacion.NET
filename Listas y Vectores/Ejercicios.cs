@@ -138,7 +138,7 @@ namespace Ejercicios
             //Esto vale pues el índice de una ciudad con sus temperaturas es el mismo
         }
 
-        private void ejercicio6() //no funciona
+        private void ejercicio6() 
         {
             int[] tablaUno = tablaDeN(1);
             int[] tablaDos = tablaDeN(2);
