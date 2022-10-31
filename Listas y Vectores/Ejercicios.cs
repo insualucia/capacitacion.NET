@@ -223,7 +223,7 @@ namespace Ejercicios
             //Console.WriteLine("La lista ordenada de forma ascendente es:");
             //for (int a = 0; a < n; a++) Console.WriteLine(numerosOrdenados[a]);
             Console.WriteLine("La lista ordenada de forma ascendente es:");
-            for (int a = 0; a < n; a++) Console.WriteLine(numeros[a]);8
+            for (int a = 0; a < n; a++) Console.WriteLine(numeros[a]);
 
         }
 
