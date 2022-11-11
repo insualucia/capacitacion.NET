@@ -14,6 +14,14 @@ namespace TP_UTN
         public int prov_cuit { get; set; }
         public CategoriaProveedor cate_codigo { get; set; }
 
+        public Proveedor(int prov_codigo, string prov_nombre, string prov_direccion, int prov_cuit, CategoriaProveedor cate_codigo)
+        {
+            this.prov_codigo = prov_codigo;
+            this.prov_nombre = prov_nombre;
+            this.prov_direccion = prov_direccion;
+            this.prov_cuit = prov_cuit;
+            this.cate_codigo = cate_codigo;
+        }   
 
 
     }
