@@ -11,7 +11,7 @@ namespace TP_UTN
         public char tipo_id { get; set; }
         public string tipo_descripcion { get; set; } 
 
-        public TipoUsuario(int tipo_id, string tipo_descripcion)
+        public TipoUsuario(char tipo_id, string tipo_descripcion)
         {
             this.tipo_id = tipo_id;
             this.tipo_descripcion = tipo_descripcion;
