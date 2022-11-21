@@ -8,17 +8,19 @@ namespace TP_UTN
 {
     public class Empleado
     {
-        public int empl_codigo { get; set; }
+        public int empl_id { get; set; }
+        public string empl_user { get; set; }
         public string empl_nombre { get; set; }
         public string empl_apellido { get; set; }
-        public Empleado empl_supervisor_id { get; set; }
+        public int empl_supervisor_id { get; set; }
 
-        public Empleado(int empl_codigo, string empl_nombre, string empl_apellido, Empleado empl_supervisor)
+        public Empleado(int empl_id, Usuario user, string empl_nombre, string empl_apellido, Empleado supervisor)
         {
-            this.empl_codigo = empl_codigo;
+            this.empl_id = empl_id;
+            this.empl_user = user.usuario_id;
             this.empl_nombre = empl_nombre;
             this.empl_apellido = empl_apellido;
-            this.empl_supervisor_id = empl_supervisor;
+            this.empl_supervisor_id = supervisor.empl_id;
         }   
     }
 }

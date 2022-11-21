@@ -8,13 +8,15 @@ namespace TP_UTN
 {
     public class CategoriaProveedor
     {
-        public int cate_codigo { get; set; }
-        public string cate_nombre { get; set; } 
+        public int cp_id { get; set; }
+        public int cp_categoria { get; set; }
+        public int cp_proveedor { get; set; }
 
-        public CategoriaProveedor(int cate_codigo, string cate_nombre)
+public CategoriaProveedor(int cp_id, Categoria categoria, Proveedor proveedor)
         {
-            this.cate_codigo = cate_codigo;
-            this.cate_nombre = cate_nombre;
+            this.cp_id = cp_id;
+            this.cp_categoria = categoria.cate_id;
+            this.cp_proveedor = proveedor.prov_id;
         }   
     }
 }

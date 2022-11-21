@@ -8,17 +8,17 @@ namespace TP_UTN
 {
     public class OrdenCompra
     {
-        public int orde_codigo { get; set; }
+        public int orde_id { get; set; }
         public DateTime orde_fecha_compra { get; set; }
-        public Cliente clie_codigo { get; set; }
-        public Empleado empl_codigo { get; set; }
+        public int orde_empleado { get; set; }
+        public int orde_cliente { get; set; }
 
-        public OrdenCompra(int orde_codigo, Cliente clie_codigo, Empleado empl_codigo)
+        public OrdenCompra(int orde_id, Cliente cliente, Empleado empleado)
         {
-            this.orde_codigo = orde_codigo;
+            this.orde_id = orde_id;
             this.orde_fecha_compra = DateTime.Now;
-            this.clie_codigo = clie_codigo;
-            this.empl_codigo = empl_codigo;
+            this.orde_cliente = cliente.clie_id;
+            this.orde_empleado = empleado.empl_id;
         }   
     }
 }

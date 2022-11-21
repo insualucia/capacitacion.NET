@@ -8,17 +8,20 @@ namespace TP_UTN
 {
     public class Promocion
     {
-        public int prom_codigo { get; set; }
-        public int prom_descuento { get; set; }
-        public DateTime prom_fecha_inicio { get; set; }
-        public DateTime prom_fecha_fin { get; set; }
+        public int prom_id { get; set; }
+        public string prom_nombre { get; set; }   
+        public decimal prom_descuento { get; set; }
+        public string? prom_imagen { get; set; }
+        public string? prom_descripcion { get; set; }
 
-        public Promocion(int prom_codigo, int prom_descuento, DateTime prom_fecha_inicio, DateTime prom_fecha_fin)
+        public Promocion(int prom_id, string prom_nombre, decimal prom_descuento, string? prom_imagen, string? prom_descripcion)
         {
-            this.prom_codigo = prom_codigo;
+            this.prom_id = prom_id;
+            this.prom_nombre = prom_nombre;
             this.prom_descuento = prom_descuento;
-            this.prom_fecha_inicio = prom_fecha_inicio;
-            this.prom_fecha_fin = prom_fecha_fin;
+            this.prom_imagen = prom_imagen;
+            this.prom_descripcion = prom_descripcion;
+            
         }   
     }
 }
