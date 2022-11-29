@@ -1,0 +1,8 @@
+﻿@model List<Cliente>
+
+<h1>Los clientes son:</h1>
+
+@foreach(var item in this.Model)
+{
+    <p>El cliente número @item.id se llama @item.nombre</p>
+}
