@@ -15,6 +15,7 @@ namespace TP_UTN
         {
             this.cate_id = cate_id;
             this.cate_nombre = cate_nombre;
+            //prueba
         }   
     }
 }
